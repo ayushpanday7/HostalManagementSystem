@@ -4,13 +4,11 @@
 }
 body{
     font-size: 10px;
-}
-Body{
     width: 100vw;
     height: 100vh;
     background-color: #f2efff;
     background-image: url("Images/indexBG.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -21,39 +19,63 @@ Body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 0.1rem solid red;
-    width: 21rem;
-    height: 25rem;
+    border: 0.1em solid red;
+    width: 21em;
+    height: 27em;
     background-color: #ffffff73;
-    font-size: 1.4rem;
-    border-radius: 2rem;
+    font-size: 1.4em;
+    border-radius: 2em;
 }
 .Lname{
-    margin-top: 1.2rem;
-    margin-bottom: 1.2rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
     font-family:sans-serif;
     font-weight: bold;
     color: #fff;
     text-shadow: 2px 2px 5px red;
+    font-size: 2.2em;
 }
 .iFream{
-    border-radius: 0.5rem;
+    border-radius: 0.5em;
     background-color: #fff;
-    border: 0.1rem solid red;
-    padding: 0.5rem;
-    margin: 1rem;
+    border: 0.1em solid red;
+    padding: 0.5em;
+    margin: 1em;
     display: flex;
     flex-direction: column;
-    width: 18rem;
+    width: 18em;
 }
 .inputBox,#submitBTN{
-    width: 17rem;
-    font-size: 1.2rem;
-    padding: 0.5rem;
-    margin-top: 0.2rem;
+    width: 14em;
+    font-size: 1.2em;
+    padding: 0.5em;
+    margin-top: 0.2em;
     border: none;
     outline: none;
 }
 #submitBTN{
-    
+    border-radius: 1em;
+    height: 2.4em;
+    color: #ff0000;
+    border: 2px solid #ff0000;
+    background-color: #ffffff53;
+    transition-duration: 300ms;
+}
+#submitBTN:hover{
+    background-color: #fff;
+    color: blue;
+    border-color: blue;
+    border-radius: 0.5em;
+}
+
+
+@media (max-width: 410px)
+{
+    body{
+        font-size: 2.5vw;
+    }
+    .field{
+        margin-top: -5vh;
+        height: 29em;
+    }
 }
