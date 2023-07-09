@@ -7,5 +7,4 @@
         $('.form-control').keypress(function(){
             $('.log-status').removeClass('wrong-entry');
         });
-
     });
