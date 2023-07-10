@@ -2,6 +2,57 @@
     margin: 0px;
     padding: 0px;
 }
+
+/* Preloader */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+  }
+  
+  .preloader.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .preloader-bar {
+    width: 100px;
+    height: 4px;
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .preloader-bar:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ccc;
+    animation: preloader-progress 2s linear infinite;
+  }
+  
+  @keyframes preloader-progress {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+  }
+
+  
+  
 body{
     font-size: 10px;
     width: 100vw;
@@ -52,6 +103,7 @@ body{
     margin-top: 0.2em;
     border: none;
     outline: none;
+    background-color: #fff;
 }
 #submitBTN{
     border-radius: 1em;
@@ -68,7 +120,43 @@ body{
     border-radius: 0.5em;
 }
 
+.alertBox{
+    
+    position: fixed;
+    background-color: #efe6ff;
+    width: 29.66em;
+    height: 20em;
+    align-items: center;
+    display: none;
+    transition-duration: 1s;
+    flex-direction: column;
+    border-radius: 1em;
+    border: 0.21em solid grey;
+}
+.alertimg{
+    font-size: 4em;
+    margin:0.4em 0.8em;
+}
+.alertDisplay{
+    font-size: 2em;
+    font-family: monospace;
+}
+.alertmessage{
+    font-size: 1.3em;
+    font-family: cursive;
+    color: red;
+}
+.alertButton{
+    width: 2.5em;
+    height: 2.5em;
+    bottom: 0.7em;
+    right: 0.7em;
+    position: absolute;
+    background-color: rgb(206, 206, 255);
+    border: none;
+    border-radius: 0.4em;
 
+}
 @media (max-width: 410px)
 {
     body{

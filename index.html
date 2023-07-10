@@ -9,6 +9,12 @@
 </head>
 
 <body>
+
+    <div class="preloader">
+        <div class="preloader-bar"></div>
+    </div>
+
+
     <div class="field">
         <div class="Lname">HEMS - Login</div>
         <div class="iFream">
@@ -17,9 +23,15 @@
         <div class="iFream">
             <input type="password" class="inputBox" id="Password" placeholder="Password">
         </div>
-        <button type="submit" id="submitBTN">Submit</button>
+        <button type="submit" id="submitBTN" onclick="verify()">Submit</button>
     </div>
-
+    <div class="alertBox">
+        <div class="alertimg">⚠️</div>
+        <div class="alertDisplay">Invelid Credentials</div>
+        <div class="alertmessage">*Username or Password is invelid</div>
+        <button class="alertButton" id="alertBtn" onclick="okbtn()">OK</button>
+    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
