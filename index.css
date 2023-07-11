@@ -121,7 +121,6 @@ body{
 }
 
 .alertBox{
-    
     position: fixed;
     background-color: #efe6ff;
     width: 29.66em;
@@ -132,6 +131,7 @@ body{
     flex-direction: column;
     border-radius: 1em;
     border: 0.21em solid grey;
+    animation: openAnimation 100ms ease-in-out 0s 1;
 }
 .alertimg{
     font-size: 4em;
@@ -155,7 +155,14 @@ body{
     background-color: rgb(206, 206, 255);
     border: none;
     border-radius: 0.4em;
-
+    animation: openAnimation 100ms ease-in 0s 1;
+}
+@keyframes openAnimation {
+    0%{
+        font-size: 0px;
+        height: 0px;
+        width: 0px;
+    }
 }
 @media (max-width: 410px)
 {

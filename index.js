@@ -7,9 +7,9 @@ function verify()
 {
     var uname = document.getElementById("uname").value;
     var Password = document.getElementById("Password").value;
-    if(uname === "t" && Password === "1")
+    if(uname === "Ayush" && Password === "12345")
     {
-        window.location.href = 'https://google.com/';
+        window.location.href = 'HostelData\\Hostel.html';
     }
     else{
         document.querySelector(".alertBox").style = "display:flex;"

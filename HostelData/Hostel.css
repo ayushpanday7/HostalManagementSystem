@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 0.7vw;
+}
+.menus{
+    background-color: #2a2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5em;
+}
+.submenu{
+    width: 48vw;
+    display: flex;
+    justify-content: left;
+    font-size: 2.2em;
+}
+.menuItems{
+    height: 2.25em;
+    font-family: monospace;
+    margin-right: 0.5em;
+    transition-duration: 500ms;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    line-height: 2em;
+    width: 7em;
+}
+.activePage{
+    box-shadow: none;
+    border-radius: 0px;
+    padding-bottom: 0.1em;
+    line-height: 2.2em;
+    background-color: #fff6f6;
+    color: blue;
+    border-top-right-radius: 0.2em;
+    border-top-left-radius: 0.2em;
+}
+
+.menuItems:hover{
+    background-color: #fff;
+    border-top-left-radius: 0.1em;
+    border-top-right-radius: 0.1em;
+    color: rgb(255, 0, 0);
+    box-shadow: 1px -1px 3px #ff0000;
+}
+
+.user{
+    justify-content: right;
+}
+
+.hostelInfo{
+    width: 80em;
+}
